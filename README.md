@@ -3,22 +3,15 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Git cone the app from the repository
 
-* Ruby version
+git clone https://github.com/manjula/assignment.git
 
-* System dependencies
+bundle install
 
-* Configuration
+rake db:migrate
 
-* Database creation
+start the rails server "rails s"
 
-* Database initialization
+on browser open localhost:3000
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
