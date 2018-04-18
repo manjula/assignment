@@ -1,0 +1,23 @@
+<%= form_with(model: send_mail, local: true) do |form| %>
+  <% if send_mail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(send_mail.errors.count, "error") %> prohibited this send_mail from being saved:</h2>
+
+      <ul>
+      <% send_mail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :send_mail_email %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

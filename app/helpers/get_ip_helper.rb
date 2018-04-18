@@ -1,0 +1,2 @@
+module GetIpHelper
+end
