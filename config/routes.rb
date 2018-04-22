@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get 'get_ip/get_ip'
 
+  get 'parse_json/json_parser'
+
   resource :get_ip, controller: :get_ip
 
   root to: "get_ip#get_ip"
