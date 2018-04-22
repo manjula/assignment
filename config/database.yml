@@ -42,8 +42,11 @@ development:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-#production:
-#  <<: *default
-#  database: assignment_production
-#  username: assignment
-#  password: <%= ENV['ASSIGNMENT_DATABASE_PASSWORD'] %>
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: pgdbname
+  username: postgres
+  password: root
+  host: localhost
+  pool: 10
