@@ -15,7 +15,6 @@
     <% @send_mails.each do |send_mail| %>
       <tr>
         <td><%= send_mail.email %></td>
-        <td><%= send_mail.string %></td>
         <td><%= link_to 'Show', send_mail %></td>
         <td><%= link_to 'Edit', edit_send_mail_path(send_mail) %></td>
         <td><%= link_to 'Destroy', send_mail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
